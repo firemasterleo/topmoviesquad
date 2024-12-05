@@ -1,0 +1,353 @@
+$primary-color-green: rgb(106,124,90);
+$secondary-color-green: rgb(106, 124, 90);
+$primary-color-white: rgb(255, 255, 255);
+$secondary-color-white:  rgb(240, 242, 243);
+$primary-color-black: rgb(38, 40, 44);
+$text-color-black: rgb(38, 40, 44);
+$text-color-white: rgb(191, 191, 191);
+$section-color: rgb(118, 118, 205);
+
+  
+* {
+    // width: fit-content;
+    padding: 0;
+    // margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    // font-family: 'Caudex', serif;
+    font-family: "Poppins", sans-serif;
+    // outline: solid black;
+    // overflow-y: scroll;
+    // width: 100vw;
+    // width: calc(100vw - 110rem);    
+    
+}
+
+  .headercontainer {
+    background: rgba(0, 0, 0, 0.377);
+    // border: solid red;
+    width: 100vw;
+    // margin: -0.5rem;
+    padding-inline: 1rem;
+    height: 7rem;
+    // overflow: hidden;
+    position: relative;
+    z-index: 15;
+
+    .topheader {
+      // width: 100%;
+      // height: fit-content;
+    //   border: solid blue;
+      padding-inline: 2rem;
+      // border: solid red;
+      // width: 100vw;
+      height: fit-content;
+      // background: none;
+        .headersection2 {
+      
+          .headersubsection {
+
+            .header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              // border: solid red;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+              .name {
+                h1 {
+                  color: rgb(204, 194, 194);
+                }
+              }
+      
+              .searchbar {
+                width: 40%;
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+                // border: solid red;
+      
+                
+                input {
+                    padding-inline: 1rem;
+                    width: 100%;
+                    border-radius: 2rem;
+                    border: solid 1px;
+                    height: 3.5rem;
+                    background-color: rgba(0, 0, 0, 0);
+                  color: rgb(225, 213, 213);
+                  font-size: 22px;
+      
+      
+                  }
+                  .searchbutton {
+                    position: absolute;
+                    right: 10px;
+                    top: 1.1rem;
+                    padding-inline: 0.5rem;
+                    cursor: pointer;
+                    
+                    svg {
+                      
+                      fill: rgb(225, 213, 213);
+                    }
+        
+                    
+                  }
+              }
+      
+              .headerlogincontainer {
+                .headerloginbutton {
+                  width: 5rem;
+                  height: 2rem;
+                  border: solid black;
+                  border-radius: 1rem;
+                  background-color: rgba(0, 0, 0, 0);
+                  color: rgb(225, 213, 213);
+                  padding-inline: 0.5rem;
+                  cursor: pointer;  
+                }
+              }
+              .usermenu {
+                display: flex;
+                // border: solid red;
+                position: relative;
+    
+                .notificationbutton {
+                  // border:  solid blue;
+                  padding-inline: 1rem ;
+                  border-top-left-radius: 1rem;
+                  border-bottom-left-radius: 1rem;
+                  border-right: solid 1px;
+                  cursor: pointer;
+                  background-color: rgb(80, 113, 80);
+                  padding-top: 0.2rem;
+                  padding-bottom: 0.2rem;
+    
+                  svg {
+                    fill: rgb(225, 213, 213);
+    
+                  }
+    
+                }
+                .profilebutton {
+                  // border:  solid blue;
+                  padding-inline: 1rem ;
+                  border-top-right-radius: 1rem;
+                  border-bottom-right-radius: 1rem;
+                  border-left: solid 1px;
+                  cursor: pointer;
+                  background-color: rgb(80, 113, 80);
+                  padding-top: 0.2rem;
+                  padding-bottom: 0.2rem;
+    
+                  svg {
+                    fill: rgb(225, 213, 213);
+    
+                  }
+    
+    
+                }
+
+              }
+            }
+      
+      
+              .authformcontainer {
+                  position: absolute;
+                  z-index: 0;
+                  top: 0rem;
+                  left: 0;
+                  width: 100vw;
+                  height: 100vh;
+                  padding-top: 10rem;
+                  background-color: rgba(0, 0, 0, 0.543);
+                  display: none;
+      
+                  &.is-loginmenuclicked {
+                      display: block;
+                  }
+      
+                  
+                  
+                  .authform {
+                  width: fit-content;
+                  height: fit-content;
+                  margin-inline: auto;
+      
+                  .loginform {
+      
+      
+                      &.is-togglelog {
+                      display: none;
+                      }
+                  
+                  
+                      position: absolute;
+                      z-index: 1;
+                      background: #FFFFFF;
+                      max-width: 360px;
+                      margin-inline: auto; 
+                      height: 24rem;
+                      padding: 45px;
+                      text-align: center;
+                      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                  
+                      input {
+                      font-family: "Roboto", sans-serif;
+                      outline: 0;
+                      background: #f2f2f2;
+                      width: 100%;
+                      border: 0;
+                      margin: 0 0 15px;
+                      padding: 15px;
+                      box-sizing: border-box;
+                      font-size: 14px;
+                      }
+                  
+                      button {
+                      font-family: "Roboto", sans-serif;
+                      text-transform: uppercase;
+                      outline: 0;
+                      background: #4CAF50;
+                      width: 100%;
+                      border: 0;
+                      padding: 15px;
+                      color: #FFFFFF;
+                      font-size: 14px;
+                      -webkit-transition: all 0.3 ease;
+                      transition: all 0.3 ease;
+                  
+                      cursor: pointer;
+                      }
+                  
+                      button:hover,.form button:active,.form button:focus {
+                      background: #43A047;
+                      }
+                      .message {
+                      margin: 15px 0 0;
+                      color: #b3b3b3;
+                      font-size: 12px;
+                      cursor: pointer;
+                      span {
+                      color: #4CAF50;
+                      text-decoration: none;
+                      }
+                  
+                      }
+                  
+                  }
+                  
+                  .registerform {
+                      &.is-togglelog {
+                          display: none;
+                      }
+                  
+                  z-index: 1;
+                  // height: 21rem;
+                  
+                  background: #FFFFFF;
+                  max-width: 360px;
+                  margin-inline: auto; 
+                  padding: 45px;
+                  text-align: center;
+                  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                  
+                      input {
+                      font-family: "Roboto", sans-serif;
+                      outline: 0;
+                      background: #f2f2f2;
+                      width: 100%;
+                      border: 0;
+                      margin: 0 0 15px;
+                      padding: 15px;
+                      box-sizing: border-box;
+                      font-size: 14px;
+                      }
+                  
+                      button {
+                      font-family: "Roboto", sans-serif;
+                      text-transform: uppercase;
+                      outline: 0;
+                      background: #4CAF50;
+                      width: 100%;
+                      border: 0;
+                      padding: 15px;
+                      color: #FFFFFF;
+                      font-size: 14px;
+                      -webkit-transition: all 0.3 ease;
+                      transition: all 0.3 ease;
+                  
+                      cursor: pointer;
+                      }
+                  
+                      button:hover,.form button:active,.form button:focus {
+                      background: #43A047;
+                      }
+                      .message {
+                      margin: 15px 0 0;
+                      color: #b3b3b3;
+                      font-size: 12px;
+                      cursor: pointer;
+                  
+                      span {
+                      color: #4CAF50;
+                      text-decoration: none;
+                      }
+                      }
+                  
+                  }
+                      }
+              }
+                }
+      }
+    }
+    .bottomheader {
+      // border: solid red;
+      display: flex;
+      gap: 15rem;
+      align-items: center;
+      margin-top: 4rem;
+      p {
+        color: rgb(204, 194, 194);
+        font-size: 26px;
+      }
+    }
+  }
+
+  .menulist {
+    position: absolute;
+    top: 7rem;
+    right: 2rem;
+    width: 10rem;
+    height: 17rem;
+    background-color: rgb(66, 63, 63);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    // gap: 0.5rem;
+    display: none;
+
+    .menu {
+    //   display: flex;
+    // border: solid red;
+
+      
+      h2 {
+        color: rgb(225, 213, 213);
+        font-size: 16px;
+      }
+      
+    }
+
+    &.is-profilebuttonclicked {
+      display: flex;
+    }
+  }
+  
+    .routersection {
+      margin-top: -9rem;
+      width: 100vw;
+    }
